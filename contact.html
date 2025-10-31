@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gyce Signature Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gyce Signature Service LLC</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="book.html">Book Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Contact Us</h2>
+            <p>Get in touch - we're here to help with all your notary needs</p>
+        </section>
+
+        <section class="contact-info">
+            <div class="contact-card">
+                <h3>📞 Phone</h3>
+                <p><a href="tel:5012327423">501-232-7423</a></p>
+                <p>Call or text for fastest response</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>✉️ Email</h3>
+                <p><a href="mailto:gycenotary@gmail.com">gycenotary@gmail.com</a></p>
+                <p>We respond within 24 hours</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>🕒 Hours</h3>
+                <p>Monday - Friday: 9 AM - 7 PM</p>
+                <p>Saturday: 10 AM - 5 PM</p>
+                <p>Sunday: By Appointment</p>
+                <p><em>Evening & weekend appointments available</em></p>
+            </div>
+
+            <div class="contact-card">
+                <h3>📍 Service Area</h3>
+                <p>Serving all of Arkansas</p>
+                <p>Mobile service to your location</p>
+                <p>E-notary services nationwide</p>
+            </div>
+        </section>
+
+        <section class="form-section mt-2">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <p class="text-center">Have a question or want to discuss your notary needs? Fill out the form below and we'll get back to you promptly.</p>
+                
+                <form action="submit_contact.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="mobile-notary">Mobile Notary</option>
+                            <option value="e-notary">E-Notary (RON)</option>
+                            <option value="loan-signing">Loan Signing</option>
+                            <option value="general-notary">General Notary</option>
+                            <option value="business-services">Business Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your notary needs..."></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq-section mt-2">
+            <div class="about-content">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                
+                <h3>How quickly can you come to me?</h3>
+                <p>We offer same-day service when available. For urgent needs, call us directly at 501-232-7423, and we'll do our best to accommodate your schedule.</p>
+
+                <h3>What areas do you serve?</h3>
+                <p>We provide mobile notary services throughout Arkansas. E-notary services are available nationwide.</p>
+
+                <h3>How much do your services cost?</h3>
+                <p>Pricing varies based on the service type, location, and time requirements. Contact us for a quote specific to your needs.</p>
+
+                <h3>What should I bring to the appointment?</h3>
+                <p>Please bring a current, valid government-issued photo ID (driver's license, passport, or state ID). Also bring all documents that need to be notarized.</p>
+
+                <h3>Can you notarize documents in foreign languages?</h3>
+                <p>Yes, as long as the notarial certificate is in English. The document itself can be in any language.</p>
+
+                <h3>Do you provide witnesses?</h3>
+                <p>Yes, we can provide witness services when needed. Let us know in advance so we can arrange this.</p>
+
+                <h3>Are your services legally valid?</h3>
+                <p>Yes! We are a fully licensed Arkansas notary public. Our notarizations are legally valid and recognized nationwide. Our e-notary services comply with all state and federal regulations.</p>
+
+                <h3>How do I prepare for an e-notary session?</h3>
+                <p>You'll need a computer or smartphone with a camera and internet connection, your documents uploaded to our secure portal, and a valid photo ID. We'll guide you through the entire process.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Gyce Signature Service LLC</strong></p>
+        <p>Mobile Notary | E-Notary | Loan Signing Agent</p>
+        <p>📞 501-232-7423 | ✉️ gycenotary@gmail.com</p>
+        <p>E&O Insured, Licensed & Bonded | Based in Arkansas</p>
+        <p>&copy; 2025 Gyce Signature Service LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
